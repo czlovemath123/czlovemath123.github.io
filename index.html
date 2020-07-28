@@ -45,8 +45,7 @@
                         <section>
                             <h2>About me</h2>
                             <a href="images/menew.jpg"><img src="images/menew.jpg" alt="" class="12u 12u(mobile)"/></a>
-                            <p style="font-size:15pt; font-family:verdana">My name is Zhuo Chen 陈卓. I work on computational astrophysics. Most of my research focus on radiation-hydrodynamics and AGB binaries evolution.</p>
-                            <p style="font-size:15pt; font-family:verdana">Reach me at zc10@ualberta.ca</p>
+                            <p style="font-size:13pt; font-family: Arial, Helvetica, Times, serif; text-align:left;">My name is Zhuo Chen 陈卓. I work on computational astrophysics. Most of my research focus on radiation-hydrodynamics (RHD) and AGB binaries evolution.</p>
                         </section>
                         <ul class="link-list">
                             <li><a href="https://ui.adsabs.harvard.edu/user/libraries/46-9wC3QQZSRlXRS4Lh6FQ">My ADS</a></li>
@@ -54,25 +53,29 @@
                             <li><a href="CV.pdf">My CV</a></li>
                         </ul>
                     </div>
-                        <div class="9u 12u(mobile)">
-                            <div class="ex1">
-                                <section>
-                                    <h2>Research highlights</h2>
-                                        <h4>AGB binary evolution (2020)</h4>
-                                        <p style="font-size:15pt; font-family:verdana; text-align:left;">The interaction of AGB binaries can be intensified by a mechanism called "Wind-Roche-lobe-overflow" and a circumbinary disk. Many observations imply that circumbinary disks exist around evolved binary systems. We find that if we take 3D radiation transfer into account, a circumbinary diskmay form due to the increased optical depth in the equatorial region. Please read <a href="https://arxiv.org/abs/1910.08027">this paper</a> for details.</p>
-                                        <div class="row">
-                                            <div class="column">
-                                                <img src="images/cirdisk.gif" alt="Circumbinary disk"/>
-                                                <figcaption>Circumbinary disk scenario. A simulation can be found <a href="https://www.youtube.com/watch?v=GHAh9pur9R0">here</a>.</figcaption>
-                                            </div>
-                                            <div class="column">
-                                                <img src="images/accdisk.gif" alt="No circumbinary disk"/>
-                                                <figcaption>No circumbinary disk scenario. A simulation can be found <a href="https://www.youtube.com/watch?v=bFAt_bOS0cw">here</a>.</figcaption>
-                                            </div>
+                    <div class="9u 12u(mobile)">
+                        <div class="ex1">
+                            <section>
+                                <h2>Research highlights</h2>
+                                    <h4>AGB binary evolution (2020)</h4>
+                                    <p style="font-size:15pt; font-family: Arial, Helvetica, Times, serif ; text-align:left;">The interaction of AGB binaries can be intensified by a mechanism called "Wind-Roche-lobe-overflow" and a circumbinary disk. Many observations imply that circumbinary disks exist around evolved binary systems. We find that if we take 3D radiation transfer into account, a circumbinary diskmay form due to the increased optical depth in the equatorial region. Please read <a href="https://arxiv.org/abs/1910.08027">this paper</a> for details.</p>
+                                    <div class="row">
+                                        <div class="column">
+                                            <img src="images/cirdisk.gif" alt="Circumbinary disk"/>
+                                            <figcaption>Circumbinary disk scenario. A simulation can be found <a href="https://www.youtube.com/watch?v=GHAh9pur9R0">here</a>.</figcaption>
                                         </div>
-                                </section>
-                            </div>
+                                        <div class="column">
+                                            <img src="images/accdisk.gif" alt="No circumbinary disk"/>
+                                            <figcaption>No circumbinary disk scenario. A simulation can be found <a href="https://www.youtube.com/watch?v=bFAt_bOS0cw">here</a>.</figcaption>
+                                        </div>
+                                    </div>
+                                    <h3>Equation of state and radiation-hydrodynamics</h3>
+                                    <p style="font-size:15pt; font-family: Arial, Helvetica, Times, serif ; text-align:left;">The need to incorporate complex equations of state (EoS) in radiation-hydrodynamics (RHD) is becoming increasingly important in computational astrophysics. In order to solve the RHD problem together with a complex EoS, we have proposed a novel exact Riemann solver and an HLLC type approximate Riemann solver in <a href="https://arxiv.org/abs/1903.04568">this paper</a>. By applying the MUSCL scheme and AMR, the accuracy of the solution can be improved considerably.</p>
+                                    <img src="images/realgas.png" alt="realgas" width=100%/>
+                                    <figcaption>We use hydrogen EoS (disassociation+ionization). Left: base resolution N=256 no AMR. Right: base resolution N=256 with 4 levels of AMR</figcaption>
+                            </section>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
