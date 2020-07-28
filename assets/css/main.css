@@ -19,6 +19,7 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+                text-align: center;
 	}
 
 	body {
@@ -1084,7 +1085,7 @@
 		font-family: sans-serif;
 		background-color: #e3e9dc;
 		font-family: 'Ubuntu Condensed', sans-serif;
-		color: #878e83;
+		color: #000000;
 		letter-spacing: -1px;
 	}
 
@@ -1109,12 +1110,12 @@
 	}
 
 	h3 {
-		font-size: 1.2em;
-		margin-bottom: 0.8em;
+		font-size: 1.5em;
+		margin-top: 2em;
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	p, ul {
