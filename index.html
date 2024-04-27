@@ -31,8 +31,10 @@
 			<header id="header">
 			    <h1><a style="color: white" href="#" id="logo">Zhuo Chen's page</a></h1>
 			    <nav id="nav">
+                                <a href="planetary.html" class="current-page-item">Planetary</a>
+                                <a href="stellar.html" class="current-page-item">Stellar</a>
+                                <a href="hpc.html" class="current-page-item">HPC</a>
                                 <a href="index.html" class="current-page-item">Homepage</a>
-			    </nav>
 			</header>
                     </div>
                 </div>
@@ -43,41 +45,37 @@
                 <div class="row main-row">
                     <div class="3u 12u(mobile)">
                         <section>
-                            <h2>About me</h2>
                             <img src="images/menew.jpg" alt="" class="12u 12u(mobile)"/>
-                            <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif; text-align:left;">My name is Zhuo Chen 陈卓. I am currently an associate research professor of the Institute of Advanced Study in Tsinghua University. I work on computational astrophysics. Most of my research focus on radiation-hydrodynamics (RHD) and AGB binaries evolution.</p>
                         </section>
                         <ul class="link-list">
                             <li><a href="https://ui.adsabs.harvard.edu/user/libraries/46-9wC3QQZSRlXRS4Lh6FQ">My ADS</a></li>
                             <li><a href="https://scholar.google.com/citations?user=-Fmkk_cAAAAJ&hl=en">Google scholar</a></li>
                             <li><a href="CV.pdf">My CV</a></li>
                         </ul>
-                        <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif; text-align:left;">My collaborators (alphabetical): <a href="http://www.pas.rochester.edu/~blackman/" style="color:black">Eric G. Blackman</a>, <a href="http://www.pas.rochester.edu/~johannjc/" style="color:black">Jonathan Carroll-Nellenback</a>, <a href="https://www.adamfrankscience.com/" style="color:black">Adam Frank</a>, <a href="https://sites.ualberta.ca/~ivanova1/" style="color:black">Natalia Ivanova</a>, and <a href="https://ccrgpages.rit.edu/~nordhaus/Home.html" style="color:black">Jason Nordhaus</a>.</p>
+                        <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif; text-align:left;">My collaborators (alphabetical):
+                            <a href="http://i.astro.tsinghua.edu.cn/~xbai/" style="color:black">Xuening Bai</a>,
+                            <a href="http://www.pas.rochester.edu/~blackman/" style="color:black">Eric G. Blackman</a>, 
+                            <a href="http://www.pas.rochester.edu/~johannjc/" style="color:black">Jonathan Carroll-Nellenback</a>, 
+                            <a href="https://www.adamfrankscience.com/" style="color:black">Adam Frank</a>, 
+                            <a href="https://sites.ualberta.ca/~ivanova1/" style="color:black">Natalia Ivanova</a>, 
+                            and <a href="https://ccrgpages.rit.edu/~nordhaus/Home.html" style="color:black">Jason Nordhaus</a>.
+                        </p>
                     </div>
                     <div class="9u 12u(mobile)">
                         <div>
                             <section>
-                                <h2>Research highlights</h2>
-                                <h4>Asymptotic-giant-branch (AGB) binary evolution (2020)</h4>
-                                <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif ; text-align:left;">The interaction of AGB binaries can be intensified by a mechanism called "Wind-Roche-lobe-overflow" and a circumbinary disk. Many observations imply that circumbinary disks exist around evolved binary systems. We find that if we take 3D non-local radiative transfer into consideration, a circumbinary disk may form due to the increased optical depth in the equatorial region. Please read <a href="https://arxiv.org/abs/1910.08027">this paper</a> for more details. This paper was featured in the AAS Author series <a href="https://www.youtube.com/watch?v=QPyIcN2zCLE&list=PLFhVT3VzlwKrArGdcNhtSCF4NbDBd6K5_&index=9">here</a>.</p>
-                                <div class="row">
-                                    <div class="column">
-                                        <img src="images/cirdisk.gif" alt="Circumbinary disk"/>
-                                        <figcaption>A circumbinary disk scenario. A simulation can be found <a href="https://www.youtube.com/watch?v=GHAh9pur9R0">here</a>.</figcaption>
-                                    </div>
-                                    <div class="column">
-                                        <img src="images/accdisk.gif" alt="No circumbinary disk" width=95%/>
-                                        <figcaption>A no circumbinary disk scenario. A simulation can be found <a href="https://www.youtube.com/watch?v=bFAt_bOS0cw">here</a>.</figcaption>
-                                    </div>
-                                </div>
-                                <h3>Equation of state and radiation-hydrodynamics</h3>
-                                <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif ; text-align:left;">The need to incorporate complex equations of state (EoS) in radiation-hydrodynamics (RHD) is becoming increasingly important in computational astrophysics. In order to solve the RHD problem together with a complex EoS, we have proposed a novel exact Riemann solver and an HLLC type approximate Riemann solver in <a href="https://arxiv.org/abs/1903.04568">this paper</a>. By applying the MUSCL scheme and AMR, the accuracy of the solution can be improved considerably.</p>
-                                <a href="images/realgas.png"><img src="images/realgas.png" alt="realgas" width=100%/></a>
-                                <figcaption>We use hydrogen EoS. Left: base resolution N=256 with 4 levels of AMR. Right: base resolution N=256 no AMR. The blue and red lines correspond to the level of AMR of MUSCL and Godunov scheme. Click to enlarge.</figcaption>
-                                &nbsp
-                                <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif ; text-align:left;">I have implemented an algorithm to couple the radiationhydrodynamics with a nonlinear equation of state and the static-mesh-refinement technique. The figure below shows a supercritical radiative shock calculation. The initial condition of the gas is \rho=7.78e-10g/cm^3, T=10K. The left boundary is a piston - a nonconducting wall, moving at a speed of 70km/s to the right. The right boundary adopts the Milne's boundary condition. The mean free path for the radiation is 3.1e-10 cm^{-1}, (both Planck and Roseeland mean opacity). We can clear see that a Zel'dovich spike is generated at the front of the piston. The radiation transfers energy to other places and change the temperature and composition of the gas.</p>
-                                <a href="images/rhd.png"><img src="images/rhd.png" alt="radiationhydrodynamics" width=100%/></a>
-                                <figcaption>t=2500s. Click to enlarge. Left panel: gas and radiation temperature and level of refinement. Right panel: mass fraction of the molecular, neutral and ionized hydrogen.</figcaption>
+                                <h2>About me</h2>
+                                <p style="font-size:1.5em; font-family: 'Times New Roman', serif; text-align:left;">
+                                    &emsp;&nbsp;Welcome to my website! My name is Zhuo Chen 陈卓. 
+                                    I am currently an associate research professor of the Institute for Advanced Study at Tsinghua University. 
+                                    I work on computational astrophysics. I have broad research interests in planetary science, stellar evoltion and high-performance computing.
+                                    I am the main designer and coder of Guangqi 光启, a radiation hydrodynamic code.
+                                    <br>&emsp;&nbsp;Reach me at: chenzhuo_astro@tsinghua.edu.cn.</br>
+                                </p>
+                            </section>
+                            <section>
+                                <img src="images/accdisk.jpeg" alt="" class="5u 12u(mobile)"/>
+                                <img src="images/planetformation.jpeg" alt="" class="6u 12u(mobile)"/>
                             </section>
                         </div>
                     </div>

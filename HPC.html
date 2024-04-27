@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Zhuo Chen</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    </head>
+    <style>
+        div.ex1 {
+            background-color: #E3E3E3 ;
+            padding: 30px;
+            width: 1000px;
+            height: 800px;
+            overflow: scroll;
+        }
+    </style>
+    <body>
+        <div id="page-wrapper">
+            <div id="header-wrapper">
+                <div class="container">
+		    <div class="row">
+			<div class="12u">
+			<header id="header">
+			    <h1><a style="color: white" href="#" id="logo">Zhuo Chen's page</a></h1>
+			    <nav id="nav">
+                                <a href="planetary.html" class="current-page-item">Planetary</a>
+                                <a href="stellar.html" class="current-page-item">Stellar</a>
+                                <a href="hpc.html" class="current-page-item">HPC</a>
+                                <a href="index.html" class="current-page-item">Homepage</a>
+			</header>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="12u 12u(mobile)">
+                        <div>
+                            <section>
+                                <h2>Equation of state and radiation-hydrodynamics</h2>
+                                <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif ; text-align:left;">
+                                    The need to incorporate complex equations of state (EoS) in radiation-hydrodynamics (RHD) is becoming increasingly important in computational astrophysics. 
+                                    In order to solve the RHD problem together with a complex EoS, we have proposed a novel exact Riemann solver and an HLLC type approximate Riemann solver in <a href="https://arxiv.org/abs/1903.04568">this paper</a>. 
+                                    By applying the MUSCL scheme and AMR, the accuracy of the solution can be improved considerably.
+                                </p>
+                                <a href="images/realgas.png"><img src="images/realgas.png" alt="realgas" width=100%/></a>
+                                <figcaption>We use hydrogen EoS. Left: base resolution N=256 with 4 levels of AMR. 
+                                    Right: base resolution N=256 no AMR. The blue and red lines correspond to the level of AMR of MUSCL and Godunov scheme. 
+                                    Click to enlarge.</figcaption>
+                                &nbsp
+                                <p style="font-size:1em; font-family: Arial, Helvetica, Times, serif ; text-align:left;">I have implemented an algorithm to couple the radiationhydrodynamics with a nonlinear equation of state and the static-mesh-refinement technique. The figure below shows a supercritical radiative shock calculation. The initial condition of the gas is \rho=7.78e-10g/cm^3, T=10K. The left boundary is a piston - a nonconducting wall, moving at a speed of 70km/s to the right. The right boundary adopts the Milne's boundary condition. The mean free path for the radiation is 3.1e-10 cm^{-1}, (both Planck and Roseeland mean opacity). We can clear see that a Zel'dovich spike is generated at the front of the piston. The radiation transfers energy to other places and change the temperature and composition of the gas.</p>
+                                <a href="images/rhd.png"><img src="images/rhd.png" alt="radiationhydrodynamics" width=100%/></a>
+                                <figcaption>t=2500s. Click to enlarge. Left panel: gas and radiation temperature and level of refinement. 
+                                    Right panel: mass fraction of the molecular, neutral and ionized hydrogen.</figcaption>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
