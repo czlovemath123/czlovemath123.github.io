@@ -25,7 +25,7 @@ Direct imaging of actively accreting protoplanets (such as PDS 70 b and c) and u
       During the runaway gas accretion phase, infalling gas approaches free-fall velocity and forms a luminous accretion shock at the planet's surface. Using 1D RHD simulations with a realistic hydrogen/helium equation of state, we showed that <b>molecular hydrogen (H<sub>2</sub>) dissociation</b> at ∼2000 K drives a sharp jump in post-shock entropy at high accretion rates, leading to <b>hot-start</b> planet formation (<a href="https://arxiv.org/abs/2201.07453" target="_blank" rel="noopener noreferrer">Chen &amp; Bai 2022</a>).
     </p>
     <p>
-      Building on this, we coupled first-principles shock models to planetary interior evolution (<code>MESA</code>) via a physics-informed neural network (<a href="https://arxiv.org/abs/2611.24615" target="_blank" rel="noopener noreferrer">Zha &amp; Chen 2026</a>), predicting initial luminosities 4–10 times higher than canonical cold-start models and linking accretion physics directly to Jupiter's primordial dynamo magnetic field.
+      Building on this, we coupled first-principles shock models to planetary interior evolution (<code>MESA</code>) via a physics-informed neural network (<a href="https://arxiv.org/abs/2611.24615" target="_blank" rel="noopener noreferrer">Zha &amp; Chen 2026</a>), predicting initial intrinsic luminosities 4–10 times higher than canonical cold-start models and linking accretion physics directly to primordial dynamo magnetic fields. Under optimistic assumptions, the maximum magnetic field strength at 2 <i>R</i><sub>J</sub> reaches a few gauss for a 0.3 <i>M</i><sub>J</sub> planet, ∼100 G for 1 <i>M</i><sub>J</sub>, and ∼500 G for 3 <i>M</i><sub>J</sub>.
     </p>
   </div>
 </div>
@@ -37,13 +37,6 @@ Direct imaging of actively accreting protoplanets (such as PDS 70 b and c) and u
   </div>
   <p class="text-sm text-muted-foreground mt-2 text-center">
     <b>Left panel:</b> Schematic of planetary accretion shock physics: gas infalls at free-fall velocity, passes through an accretion shock at the top of the atmosphere, and settles onto deeper layers under internal (<i>L</i><sub>int</sub>) and accretion (<i>L</i><sub>acc</sub>) luminosities (Zha &amp; Chen 2026). <b>Right panel:</b> Evolution of planetary luminosity <i>L</i> (a) and primordial dynamo magnetic field strength <i>B</i><sub>2<i>R</i><sub>J</sub></sub> (b) for <i>M<sub>p</sub></i> = 0.3, 1, and 3 <i>M</i><sub>J</sub>, comparing our realistic-EOS shock boundary conditions (red) against canonical cold-start photospheric models (blue; Zha &amp; Chen 2026), with filled dots marking the end of accretion.
-  </p>
-</div>
-
-<div class="my-6">
-  <img src="./accshock.png" alt="Steady-state accretion shock thermodynamic structure across nine radial profiles" class="rounded-md w-full" />
-  <p class="text-sm text-muted-foreground mt-2">
-    Representative steady-state accretion shock solution from <code>Guangqi</code> for a 1 <i>M</i><sub>J</sub> gas giant (<i>R</i><sub>in</sub> = 2 <i>R</i><sub>J</sub>, <i>Ṁ</i> = 0.005 <i>M</i><sub>⊕</sub> yr<sup>−1</sup>, <i>L</i><sub>int</sub>/<i>L</i><sub>acc</sub> = 0.1; Zha &amp; Chen 2026). Panels show radial profiles of (a) gas velocity <i>v</i>, (b) density <i>ρ</i>, (c) pressure <i>p</i>, (d) Planck (<i>κ</i><sub>P</sub>) and Rosseland (<i>κ</i><sub>R</sub>) mean opacities highlighting the silicate sublimation zone, (e) gas and radiation temperatures with an inset resolving the shock spike, (f) reduced radiation flux <i>f</i><sub>r</sub>, (g) luminosity <i>L</i>, (h) specific entropy <i>s</i>, and (i) H<sub>2</sub> mass fraction <i>χ</i><sub>H<sub>2</sub></sub> across the H<sub>2</sub> dissociation zone. Open circles mark the post-shock state.
   </p>
 </div>
 
