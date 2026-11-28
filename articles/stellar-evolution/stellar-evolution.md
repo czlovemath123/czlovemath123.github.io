@@ -27,35 +27,35 @@ Common envelope evolution (CEE) is a pivotal yet poorly understood phase of bina
 
 ### Case Study: M31 Luminous Red Nova AT 2025abao
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start my-6">
-  <div class="flex flex-col gap-1.5">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start my-6">
+  <div class="not-prose md:col-span-6 flex flex-col gap-2">
     <div>
-      <img src="./abao2025whole.png" alt="Multi-wavelength light curve of AT 2025abao from quiescent to eruption" class="rounded-md w-full m-0" />
-      <p class="text-xs text-muted-foreground mt-0.5 mb-0.5">
-        Multi-wavelength light curve of AT 2025abao spanning 2004–2026 across its quiescent, seven-year precursor (plus several months in 2025 observed by WFST), pre-outburst dip, and eruption phases (<a href="https://arxiv.org/abs/2611.23470" target="_blank" rel="noopener noreferrer">Karambelkar et al. 2026</a>).
+      <img src="./abao2025whole.png" alt="Multi-wavelength light curve of AT 2025abao from quiescent to eruption" class="rounded-md w-full" />
+      <p class="text-xs leading-snug text-muted-foreground mt-1">
+        Multi-wavelength light curve of AT 2025abao spanning 2004–2026 across its quiescent, seven-year precursor (plus several months in 2025 observed by WFST), pre-outburst dip, and eruption phases (<a href="https://arxiv.org/abs/2611.23470" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">Karambelkar et al. 2026</a>).
       </p>
     </div>
     <div>
-      <img src="./radial_evolution.png" alt="Radial evolution of AT 2025abao" class="rounded-md w-full m-0" />
-      <p class="text-xs text-muted-foreground mt-1">
+      <img src="./radial_evolution.png" alt="Radial evolution of AT 2025abao" class="rounded-md w-full" />
+      <p class="text-xs leading-snug text-muted-foreground mt-1">
         1D <code>MESA</code> CEE evolution of the 6.9 <i>M</i><sub>☉</sub> AGB primary + 1.4 <i>M</i><sub>☉</sub> companion, showing density, centrifugal-to-gravity ratio, radial velocity, temperature, opacity, and radiative-to-convective luminosity (Chen et al. 2026).
       </p>
     </div>
     <div>
-      <img src="./kippenhahn_energybudget.png" alt="Kippenhahn and energy budget" class="rounded-md w-full m-0" />
-      <p class="text-xs text-muted-foreground mt-1">
+      <img src="./kippenhahn_energybudget.png" alt="Kippenhahn and energy budget" class="rounded-md w-full" />
+      <p class="text-xs leading-snug text-muted-foreground mt-1">
         <b>Left:</b> Energy budget changes between 180–200 days and the initial CEE state across six decomposed components. <b>Right:</b> Kippenhahn density diagram showing envelope expansion and ~1.1 <i>M</i><sub>☉</sub> mass loss (Chen et al. 2026).
       </p>
     </div>
     <div>
-      <img src="./combine_rtl.png" alt="Combined radius, temperature, and luminosity evolution" class="rounded-md w-full m-0" />
-      <p class="text-xs text-muted-foreground mt-1">
+      <img src="./combine_rtl.png" alt="Combined radius, temperature, and luminosity evolution" class="rounded-md w-full" />
+      <p class="text-xs leading-snug text-muted-foreground mt-1">
         Comparison of observed blackbody radius <i>R</i><sub>bb</sub>, effective temperature <i>T</i><sub>eff</sub>, and bolometric luminosity <i>L</i> with <code>RADMC-3D</code> post-processed low-speed (blue) and high-speed (red) <code>Guangqi</code> RHD models (Chen et al. 2026).
       </p>
     </div>
   </div>
 
-  <div class="space-y-3 text-sm sm:text-base leading-relaxed">
+  <div class="md:col-span-6 space-y-3 text-sm sm:text-base leading-relaxed">
     <p>
       Applying our self-consistent framework to <b>AT 2025abao</b> in M31 (<a href="https://arxiv.org/abs/2610.05769" target="_blank" rel="noopener noreferrer">Chen et al. 2026</a>), we modeled the full evolutionary sequence from its eight-year infrared precursor to its luminous red nova (LRN) outburst and spectral energy distribution (SED):
     </p>
